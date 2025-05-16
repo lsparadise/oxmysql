@@ -127,3 +127,6 @@ dist
 lib/MySQL.js
 lib/MySQL.d.ts
 lib/MySQL.js.map
+
+# Node compile cache
+node-compile-cache/
