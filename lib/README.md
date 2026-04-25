@@ -31,7 +31,7 @@ const { oxmysql } = require('@overextended/oxmysql');
 
 ## Documentation
 
-[View documentation](https://overextended.github.io/docs/oxmysql)
+[View documentation](https://overextended.dev/oxmysql)
 
 ```js
 oxmysql.scalar('SELECT username FROM users', (result) => {
