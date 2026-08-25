@@ -17,7 +17,7 @@ export const rawQuery = async (
   parameters: CFXParameters,
   cb?: CFXCallback,
   isPromise?: boolean,
-  connectionId?: number
+  connectionId?: number,
 ) => {
   cb = setCallback(parameters, cb);
   try {
@@ -26,7 +26,7 @@ export const rawQuery = async (
     return logError(invokingResource, cb, isPromise, err, query, parameters);
   }
 
-  using connection = await getConnection(connectionId);
+  await using connection = await getConnection(connectionId);
 
   if (!connection) return;
 
